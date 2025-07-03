@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Congratulations!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fffacd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .popup {
+            border: 5px solid #ff0000;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 0 20px red;
+            text-align: center;
+        }
+        h1 {
+            color: red;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background: gold;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <h1>🎉 Congratulations! 🎉</h1>
+        <p>You’ve been selected to win a brand new iPhone 15!</p>
+        <button onclick="claimPrize()">Claim Now</button>
+    </div>
+
+    <audio id="rick" src="https://www.myinstants.com/media/sounds/rick-roll.mp3"></audio>
+
+    <script>
+        function claimPrize() {
+            document.getElementById("rick").play();
+            alert("Just kidding! Lock your PC next time 😜");
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }
+    </script>
+</body>
+</html>
